@@ -1,0 +1,56 @@
+<!--Complex/Advanced/compoud
+repr.formule speciale 
+-formulas-> combine selectors
+1 Selector)*Grouping
+Selector1,sel2,sel3,...{
+<style>
+  }
+p,a,li, .first :hover{
+    color:red;
+}
+</style>
+2 Selector)
+*direct descendant
+sel1>sel2>sel3(stilul se aplica doar pentru ultima pozitie) {
+    <style>
+        div*2>p*3
+        div>p>a>b{
+        color:red;
+        }
+    </style>
+
+}
+3 Selector)
+*Descendant
+SEL1 SEL2 SEL3 {
+    se aplica ultimului,iar intregul selector este calea apropiata
+}
+4 Selector)
+*Combine
+sel1sel2sel3{
+    simultant satisfac aceleasi elemente
+    <style>
+        li.first{
+            color:red;
+        }
+}
+5 Selector)
+*next neighbour/next sibling
+sel1+sel2+sel3 {
+    afecteaza doar ultimul dar toata formula este cale exacta de la un vecin pina la altul
+}
+6 Selector)
+attribute
+[attribute="value"] {
+    <style>
+    [width="300"]{
+        color: red;
+    }
+}
+7 Selector)
+*Universal/all
+* {
+    
+}
+-->
+
